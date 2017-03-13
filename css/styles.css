@@ -1,10 +1,18 @@
 /********************
 YOUR STYLES
 *******************/
-body{
-    background: blue;
+.city {
+  color: red;
 }
-
+.state{
+  color: green;
+}
+.temp{
+  color: blue;
+}
+.country{
+  color: dodgerblue;
+}
 
 
 /********************
