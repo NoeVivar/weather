@@ -1,6 +1,3 @@
-/********************
-YOUR STYLES
-*******************/
 
 
 i {
@@ -9,18 +6,23 @@ i {
   font-size: 12em;
 }
 
+// .sunny {
+// background: #F2994A; /* fallback for old browsers */
+// background: -webkit-linear-gradient(to left, #F2994A , #F2C94C); /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to left, #F2994A , #F2C94C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+// }
 
-.sunny {
-  background: yellow;
-}
+// .sunny {
+//   background: yellow;
+// }
 
-.cloudy {
-  background: gray;
-}
+// .cloudy {
+//   background: gray;
+// }
 
-.rainy {
-  background: blue;
-}
+// .rainy {
+//   background: blue;
+// }
 
 li a {
   text-decoration: none;
@@ -57,7 +59,7 @@ height:100%;
  
 }
 
-.geo {
+#geo {
   background: blue;
  
 }
@@ -75,17 +77,19 @@ aside figure{
   justify-content: space-around;
 }
 
-
-
-/*
- aside figure:nth-child(2){
-    background: red;
- }
-*/
+figcaption{
+  font-size: 1.5em;
+}
 
 
 
-/*Minimal initial style of sidebar*/
+// aside figure:nth-child(2){
+//   background: red;
+// }
+
+
+
+// Minimal initial style of sidebar
 $sidebar-width: 16em;
 $sidebar-width-neg: -16em;
 
@@ -104,41 +108,4 @@ $sidebar-width-neg: -16em;
         left: $sidebar-width-neg;
         right: auto;
     }
-}
-
-
-/********************
-MEDIA QUERIES
-*******************/
-/* Mobile: 320px = 20em */
-@media screen and (min-width: 20em) { 
-
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Mobile Size";
-  }
-  
-}
-
-/* Tablet:  768px = 160em */
-@media screen and (min-width: 48em)  {
-
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Tablet Size";
-  }
-
-}
-
-/* Desktop: 1280px = 80em */
-@media screen and (min-width: 80em) { 
-  
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Desktop Size";
-  }
-
 }

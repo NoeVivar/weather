@@ -1,0 +1,73 @@
+/* line 3, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+i {
+  color: azure;
+  text-shadow: 0 0 20px;
+  font-size: 12em; }
+
+/* line 27, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+li a {
+  text-decoration: none; }
+
+/* line 30, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+ul {
+  list-style: none; }
+
+/* line 37, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+section {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  color: white; }
+
+/* line 44, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+#homescreen {
+  background: azure;
+  color: black;
+  height: 100%;
+  width: 100%; }
+
+/* line 52, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+#cheney {
+  background: red; }
+
+/* line 57, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+#granger {
+  background: green; }
+
+/* line 62, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+#geo {
+  background: blue; }
+
+/* line 67, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+:target {
+  z-index: 1; }
+
+/* line 72, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+aside figure {
+  background: dodgerblue;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around; }
+
+/* line 80, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+figcaption {
+  font-size: 1.5em; }
+
+/* line 96, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+.sidr {
+  background: dodgerblue;
+  display: block;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: 999999;
+  width: 16em;
+  overflow-x: hidden;
+  overflow-y: auto; }
+  /* line 107, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+  .sidr.left {
+    left: -16em;
+    right: auto; }
+
+/*# sourceMappingURL=style.css.map */

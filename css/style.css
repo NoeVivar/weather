@@ -1,0 +1,71 @@
+i {
+  color: azure;
+  text-shadow: 0 0 20px;
+  font-size: 12em;
+}
+
+li a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  color: white;
+}
+
+#homescreen {
+  background: azure;
+  color: black;
+  height: 100%;
+  width: 100%;
+}
+
+#cheney {
+  background: red;
+}
+
+#granger {
+  background: green;
+}
+
+#geo {
+  background: blue;
+}
+
+:target {
+  z-index: 1;
+}
+
+aside figure {
+  background: dodgerblue;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+figcaption {
+  font-size: 1.5em;
+}
+
+.sidr {
+  background: dodgerblue;
+  display: block;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: 999999;
+  width: 16em;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.sidr.left {
+  left: -16em;
+  right: auto;
+}
