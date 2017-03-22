@@ -1,52 +1,117 @@
 /********************
 YOUR STYLES
 *******************/
-.city {
-  color: red;
-}
-.state{
-  color: green;
-}
-.temp{
-  color: blue;
-}
-.country{
-  color: dodgerblue;
-}
+/* line 6, /Users/nvivar/Desktop/weather/css/styles.scss */
+i {
+  color: azure;
+  text-shadow: 0 0 20px;
+  font-size: 12em; }
 
+/* line 13, /Users/nvivar/Desktop/weather/css/styles.scss */
+.sunny {
+  background: yellow; }
+
+/* line 17, /Users/nvivar/Desktop/weather/css/styles.scss */
+.cloudy {
+  background: gray; }
+
+/* line 21, /Users/nvivar/Desktop/weather/css/styles.scss */
+.rainy {
+  background: blue; }
+
+/* line 25, /Users/nvivar/Desktop/weather/css/styles.scss */
+li a {
+  text-decoration: none; }
+
+/* line 28, /Users/nvivar/Desktop/weather/css/styles.scss */
+ul {
+  list-style: none; }
+
+/* line 35, /Users/nvivar/Desktop/weather/css/styles.scss */
+section {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  color: white; }
+
+/* line 42, /Users/nvivar/Desktop/weather/css/styles.scss */
+#homescreen {
+  background: azure;
+  color: black;
+  height: 100%;
+  width: 100%; }
+
+/* line 50, /Users/nvivar/Desktop/weather/css/styles.scss */
+#cheney {
+  background: red; }
+
+/* line 55, /Users/nvivar/Desktop/weather/css/styles.scss */
+#granger {
+  background: green; }
+
+/* line 60, /Users/nvivar/Desktop/weather/css/styles.scss */
+.geo {
+  background: blue; }
+
+/* line 65, /Users/nvivar/Desktop/weather/css/styles.scss */
+:target {
+  z-index: 1; }
+
+/* line 70, /Users/nvivar/Desktop/weather/css/styles.scss */
+aside figure {
+  background: dodgerblue;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around; }
+
+/*
+ aside figure:nth-child(2){
+    background: red;
+ }
+*/
+/*Minimal initial style of sidebar*/
+/* line 92, /Users/nvivar/Desktop/weather/css/styles.scss */
+.sidr {
+  background: dodgerblue;
+  display: block;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: 999999;
+  width: 16em;
+  overflow-x: hidden;
+  overflow-y: auto; }
+  /* line 103, /Users/nvivar/Desktop/weather/css/styles.scss */
+  .sidr.left {
+    left: -16em;
+    right: auto; }
 
 /********************
 MEDIA QUERIES
 *******************/
 /* Mobile: 320px = 20em */
-@media screen and (min-width: 20em) { 
-
+@media screen and (min-width: 20em) {
   /* Diagnostic Styling. Delete When Done. */
+  /* line 117, /Users/nvivar/Desktop/weather/css/styles.scss */
   body:before {
-       background: yellow;
-       content: "Mobile Size";
-  }
-  
-}
+    background: yellow;
+    content: "Mobile Size"; } }
 
 /* Tablet:  768px = 160em */
-@media screen and (min-width: 48em)  {
-
+@media screen and (min-width: 48em) {
   /* Diagnostic Styling. Delete When Done. */
+  /* line 128, /Users/nvivar/Desktop/weather/css/styles.scss */
   body:before {
-       background: yellow;
-       content: "Tablet Size";
-  }
-
-}
+    background: yellow;
+    content: "Tablet Size"; } }
 
 /* Desktop: 1280px = 80em */
-@media screen and (min-width: 80em) { 
-  
+@media screen and (min-width: 80em) {
   /* Diagnostic Styling. Delete When Done. */
+  /* line 139, /Users/nvivar/Desktop/weather/css/styles.scss */
   body:before {
-       background: yellow;
-       content: "Desktop Size";
-  }
+    background: yellow;
+    content: "Desktop Size"; } }
 
-}
+/*# sourceMappingURL=styles.css.map */

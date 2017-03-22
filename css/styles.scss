@@ -1,0 +1,144 @@
+/********************
+YOUR STYLES
+*******************/
+
+
+i {
+  color: azure;
+  text-shadow: 0 0 20px ;
+  font-size: 12em;
+}
+
+
+.sunny {
+  background: yellow;
+}
+
+.cloudy {
+  background: gray;
+}
+
+.rainy {
+  background: blue;
+}
+
+li a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+
+
+// Section Containers
+section {
+height:100%;
+  width: 100%;
+  position: relative;
+  color: white;
+}
+
+#homescreen {
+  background: azure;
+  color:black;
+  height:100%;
+  width: 100%;
+
+}
+
+#cheney {
+  background: red;
+
+}
+
+#granger {
+  background: green;
+ 
+}
+
+.geo {
+  background: blue;
+ 
+}
+
+:target {
+  z-index: 1;
+}
+
+// forecast
+aside figure{
+  background: dodgerblue;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+
+/*
+ aside figure:nth-child(2){
+    background: red;
+ }
+*/
+
+
+
+/*Minimal initial style of sidebar*/
+$sidebar-width: 16em;
+$sidebar-width-neg: -16em;
+
+.sidr {
+    background: dodgerblue;
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+    width: $sidebar-width;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &.left {
+        left: $sidebar-width-neg;
+        right: auto;
+    }
+}
+
+
+/********************
+MEDIA QUERIES
+*******************/
+/* Mobile: 320px = 20em */
+@media screen and (min-width: 20em) { 
+
+  /* Diagnostic Styling. Delete When Done. */
+  body:before {
+       background: yellow;
+       content: "Mobile Size";
+  }
+  
+}
+
+/* Tablet:  768px = 160em */
+@media screen and (min-width: 48em)  {
+
+  /* Diagnostic Styling. Delete When Done. */
+  body:before {
+       background: yellow;
+       content: "Tablet Size";
+  }
+
+}
+
+/* Desktop: 1280px = 80em */
+@media screen and (min-width: 80em) { 
+  
+  /* Diagnostic Styling. Delete When Done. */
+  body:before {
+       background: yellow;
+       content: "Desktop Size";
+  }
+
+}
