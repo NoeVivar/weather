@@ -452,7 +452,77 @@ var getWeather = function(location) {
   }
 
 });
-};
+$.simpleWeather({
+    location: location,
+    unit: 'f',
+    success: function(weather) {
+      // Entire weather object
+      console.log(weather);
+      
+      // Display Data
+      $('#geo .temp').text(weather.temp);
+      $('#geo .city').text(weather.city);
+      $('#geo i').addClass('icon-' + weather.code);
+      
+//       get condition code
+      console.log(weather.code);
+      if (weather.code>= 0 && weather.code <= 1) {
+         $('body').addClass('tornado'); 
+          }
+        if ( weather.code == 2) {
+         $('body').addClass('hurricane');   
+      }
+         if ( weather.code >= 3 && weather.code <= 4 ) {
+         $('body').addClass('thunderstorms');   
+      }
+         if ( weather.code >= 5 && weather.code <= 10 ) {
+         $('body').addClass('snowrain');   
+      }
+         if ( weather.code >= 11 && weather.code <= 12 ) {
+         $('body').addClass('showers');   
+      }
+          if ( weather.code >= 13 && weather.code <= 16 ) {
+         $('body').addClass('snow');   
+      }
+          if ( weather.code >= 17 && weather.code <= 18 ) {
+         $('body').addClass('hail');   
+      }
+          if ( weather.code >= 19 && weather.code <= 22 ) {
+         $('body').addClass('foggy');   
+      }
+          if ( weather.code >= 23 && weather.code <= 24 ) {
+         $('body').addClass('windy');   
+      }
+          if ( weather.code == 25) {
+         $('body').addClass('cold');   
+      }
+          if ( weather.code >= 26 && weather.code <= 29 ) {
+         $('body').addClass('cloudy');   
+      }
+         if ( weather.code >= 30 && weather.code <= 34 ) {
+         $('body').addClass('sunny');   
+      }
+         if ( weather.code == 35) {
+         $('body').addClass('rainhail');   
+      }
+      if ( weather.code == 36) {
+         $('body').addClass('hot');   
+      }
+      if ( weather.code >= 37 && weather.code <= 39 ) {
+         $('body').addClass('scatteredthunder');
+      }
+      if ( weather.code >= 40 && weather.code <= 47 ) {
+         $('body').addClass('scatteredshowers');   
+      }
+      
+    },
+    error: function(error) {
+      // Show if weather cannot be retreived
+      console.log('Look outside.');
+    }
+  
+  });
+    };
 
 
 

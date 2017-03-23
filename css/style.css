@@ -1,3 +1,19 @@
+body{
+    background: black;
+    color: azure;
+}
+
+h1{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+p{
+font-size: 1.5em;   
+}
+
 i {
   color: azure;
   text-shadow: 0 0 20px;
@@ -6,7 +22,7 @@ i {
 
 li a {
   text-decoration: none;
-    color: azure;
+    color: black;
 }
 a:visited{
     color:darkorchid;
@@ -20,26 +36,26 @@ section {
   height: 100%;
   width: 100%;
   position: relative;
-  color: white;
+  color: azure;
 }
 
 #homescreen {
-  background: azure;
-  color: black;
+  background: black;
+  color: azure;
   height: 100%;
   width: 100%;
 }
 
 #cheney {
-  background: red;
+  background: black;
 }
 
 #granger {
-  background: green;
+  background: black;
 }
 
 #geo {
-  background: blue;
+  background: black;
 }
 
 :target {
@@ -47,7 +63,8 @@ section {
 }
 
 aside figure {
-  background: dodgerblue;
+  background: azure;
+    color: black;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -59,7 +76,7 @@ figcaption {
 }
 
 .sidr {
-  background: dodgerblue;
+  background: azure;
   display: block;
   position: fixed;
   top: 0;
