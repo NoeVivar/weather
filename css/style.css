@@ -6,6 +6,10 @@ i {
 
 li a {
   text-decoration: none;
+    color: azure;
+}
+a:visited{
+    color:darkorchid;
 }
 
 ul {

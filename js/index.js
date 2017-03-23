@@ -303,17 +303,17 @@ $.simpleWeather({
 // Get and store Geo Location lat/long coordinates
 if ('geolocation' in navigator) {
 
-   $('.geo').show(); 
+   $('#geo').show(); 
 
 } else {
   
-  $('.geo').hide();
-  $('.geo').prepend('<p>Geolocation Not Supported</p>');
+  $('#geo').hide();
+  $('#geo').prepend('<p>Geolocation Not Supported</p>');
 
 }
 
 // On Click, Get Geolocation, Call Weather Function
-$('.geo').click( function() {
+$('#geo').click( function() {
       
     //load weather using your lat/long coordinates
     navigator.geolocation.getCurrentPosition(function(position) {
@@ -342,9 +342,9 @@ var getWeather = function(location) {
       console.log(weather);
       
       // Display Data
-      $('.temp').text(weather.temp);
-      $('.city').text(weather.city);
-      $('img').attr('src', weather.image);
+      $('#geo .temp').text(weather.temp);
+      $('#geo .city').text(weather.city);
+      $('#geo img').attr('src', weather.image);
         
 
     },
@@ -354,7 +354,104 @@ var getWeather = function(location) {
     }
   
   });
-  
+  $.simpleWeather({
+  location: 98932,
+  unit: 'f',
+  success: function(weather) {
+    // Entire weather object
+    console.log(weather);
+//       display future weather
+//       Day 1
+      $('aside figure:nth-child(1) h2').text(weather.forecast[0].day);
+      $('aside figure:nth-child(1) img').attr('src', weather.forecast[0].image);
+      $('aside figure:nth-child(1) figcaption').text(weather.forecast[0].text);
+      $('aside figure:nth-child(1) .high').text(weather.forecast[0].high)
+      
+//       Day 2
+      $('aside figure:nth-child(2) h2').text(weather.forecast[1].day);
+      $('aside figure:nth-child(2) img').attr('src', weather.forecast[1].image);
+      $('aside figure:nth-child(2) figcaption').text(weather.forecast[1].text);
+      $('aside figure:nth-child(2) .high').text(weather.forecast[1].high)
+      
+//       Day3
+      $('aside figure:nth-child(3) h2').text(weather.forecast[2].day);
+      $('aside figure:nth-child(3) img').attr('src', weather.forecast[2].image);
+      $('aside figure:nth-child(3) figcaption').text(weather.forecast[2].text);
+      $('aside figure:nth-child(3) .high').text(weather.forecast[2].high)
+    
+    //       Day3
+      $('aside figure:nth-child(4) h2').text(weather.forecast[3].day);
+      $('aside figure:nth-child(4) img').attr('src', weather.forecast[3].image);
+      $('aside figure:nth-child(4) figcaption').text(weather.forecast[3].text);
+      $('aside figure:nth-child(4) .high').text(weather.forecast[3].high)
+    
+      //       Day3
+      $('aside figure:nth-child(5) h2').text(weather.forecast[4].day);
+      $('aside figure:nth-child(5) img').attr('src', weather.forecast[4].image);
+      $('aside figure:nth-child(5) figcaption').text(weather.forecast[4].text);
+      $('aside figure:nth-child(5) .high').text(weather.forecast[4].high)
+    
+      //       Day3
+      $('aside figure:nth-child(6) h2').text(weather.forecast[5].day);
+      $('aside figure:nth-child(6) img').attr('src', weather.forecast[5].image);
+      $('aside figure:nth-child(6) figcaption').text(weather.forecast[5].text);
+      $('aside figure:nth-child(6) .high').text(weather.forecast[5].high)
+    
+      //       Day3
+      $('aside figure:nth-child(7) h2').text(weather.forecast[6].day);
+      $('aside figure:nth-child(7) img').attr('src', weather.forecast[6].image);
+      $('aside figure:nth-child(7) figcaption').text(weather.forecast[6].text);
+      $('aside figure:nth-child(7) .high').text(weather.forecast[6].high)
+
+    // Display Data : Day 1
+    $('.forecastregion figure:nth-child(1) .next-day').text(weather.forecast[0].day);
+    $('.forecastregion figure:nth-child(1) .low').text(weather.forecast[0].low);
+    $('.forecastregion figure:nth-child(1) .high').text(weather.forecast[0].high);
+    $('.forecastregion figure:nth-child(1) img').attr('src', weather.forecast[0].image);
+
+    // Display Data : Day 2
+    $('.forecastregion figure:nth-child(2) .next-day').text(weather.forecast[1].day);
+    $('.forecastregion figure:nth-child(2) .low').text(weather.forecast[1].low);
+    $('.forecastregion figure:nth-child(2) .high').text(weather.forecast[1].high);
+    $('.forecastregion figure:nth-child(2) img').attr('src', weather.forecast[1].image);
+
+    // Display Data : Day 3
+    $('.forecastregion figure:nth-child(3) .next-day').text(weather.forecast[2].day);
+    $('.forecastregion figure:nth-child(3) .low').text(weather.forecast[2].low);
+    $('.forecastregion figure:nth-child(3) .high').text(weather.forecast[2].high);
+    $('.forecastregion figure:nth-child(3) img').attr('src', weather.forecast[2].image);
+
+    // Display Data : Day 4
+    $('.forecastregion figure:nth-child(4) .next-day').text(weather.forecast[3].day);
+    $('.forecastregion figure:nth-child(4) .low').text(weather.forecast[3].low);
+    $('.forecastregion figure:nth-child(4) .high').text(weather.forecast[3].high);
+    $('.forecastregion figure:nth-child(4) img').attr('src', weather.forecast[3].image);
+
+    // Display Data : Day 5
+    $('.forecastregion figure:nth-child(5) .next-day').text(weather.forecast[4].day);
+    $('.forecastregion figure:nth-child(5) .low').text(weather.forecast[4].low);
+    $('.forecastregion figure:nth-child(5) .high').text(weather.forecast[4].high);
+    $('.forecastregion figure:nth-child(5) img').attr('src', weather.forecast[4].image);
+
+    // Display Data : Day 6
+    $('.forecastregion figure:nth-child(6) .next-day').text(weather.forecast[5].day);
+    $('.forecastregion figure:nth-child(6) .low').text(weather.forecast[5].low);
+    $('.forecastregion figure:nth-child(6) .high').text(weather.forecast[5].high);
+    $('.forecastregion figure:nth-child(6) img').attr('src', weather.forecast[5].image);
+
+    // Display Data : Day 7
+    $('.forecastregion figure:nth-child(7) .next-day').text(weather.forecast[6].day);
+    $('.forecastregion figure:nth-child(7) .low').text(weather.forecast[6].low);
+    $('.forecastregion figure:nth-child(7) .high').text(weather.forecast[6].high);
+    $('.forecastregion figure:nth-child(7) img').attr('src', weather.forecast[6].image);
+
+  },
+  error: function(error) {
+    // Show if weather cannot be retreived
+    console.log('Look outside.');
+  }
+
+});
 };
 
 

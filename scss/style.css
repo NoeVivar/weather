@@ -1,48 +1,53 @@
-/* line 3, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+/* line 3, /Users/nvivar/Desktop/weather/scss/style.scss */
 i {
   color: azure;
   text-shadow: 0 0 20px;
   font-size: 12em; }
 
-/* line 27, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+/* line 27, /Users/nvivar/Desktop/weather/scss/style.scss */
 li a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: azure; }
 
-/* line 30, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+/* line 31, /Users/nvivar/Desktop/weather/scss/style.scss */
 ul {
   list-style: none; }
 
-/* line 37, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+/* line 35, /Users/nvivar/Desktop/weather/scss/style.scss */
+a:visited {
+  color: darkorchid; }
+
+/* line 41, /Users/nvivar/Desktop/weather/scss/style.scss */
 section {
   height: 100%;
   width: 100%;
   position: relative;
   color: white; }
 
-/* line 44, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+/* line 48, /Users/nvivar/Desktop/weather/scss/style.scss */
 #homescreen {
   background: azure;
   color: black;
   height: 100%;
   width: 100%; }
 
-/* line 52, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+/* line 56, /Users/nvivar/Desktop/weather/scss/style.scss */
 #cheney {
   background: red; }
 
-/* line 57, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+/* line 61, /Users/nvivar/Desktop/weather/scss/style.scss */
 #granger {
   background: green; }
 
-/* line 62, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+/* line 66, /Users/nvivar/Desktop/weather/scss/style.scss */
 #geo {
   background: blue; }
 
-/* line 67, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+/* line 71, /Users/nvivar/Desktop/weather/scss/style.scss */
 :target {
   z-index: 1; }
 
-/* line 72, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+/* line 76, /Users/nvivar/Desktop/weather/scss/style.scss */
 aside figure {
   background: dodgerblue;
   display: flex;
@@ -50,11 +55,11 @@ aside figure {
   flex-direction: row;
   justify-content: space-around; }
 
-/* line 80, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+/* line 84, /Users/nvivar/Desktop/weather/scss/style.scss */
 figcaption {
   font-size: 1.5em; }
 
-/* line 96, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+/* line 100, /Users/nvivar/Desktop/weather/scss/style.scss */
 .sidr {
   background: dodgerblue;
   display: block;
@@ -65,7 +70,7 @@ figcaption {
   width: 16em;
   overflow-x: hidden;
   overflow-y: auto; }
-  /* line 107, C:/Users/EWUM/Desktop/weather/scss/style.scss */
+  /* line 111, /Users/nvivar/Desktop/weather/scss/style.scss */
   .sidr.left {
     left: -16em;
     right: auto; }
