@@ -355,7 +355,7 @@ var getWeather = function(location) {
   
   });
   $.simpleWeather({
-  location: 98932,
+  location: location,
   unit: 'f',
   success: function(weather) {
     // Entire weather object
