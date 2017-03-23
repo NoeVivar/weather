@@ -379,25 +379,25 @@ var getWeather = function(location) {
       $('aside figure:nth-child(3) figcaption').text(weather.forecast[2].text);
       $('aside figure:nth-child(3) .high').text(weather.forecast[2].high)
     
-    //       Day3
+    //       Day4
       $('aside figure:nth-child(4) h2').text(weather.forecast[3].day);
       $('aside figure:nth-child(4) img').attr('src', weather.forecast[3].image);
       $('aside figure:nth-child(4) figcaption').text(weather.forecast[3].text);
       $('aside figure:nth-child(4) .high').text(weather.forecast[3].high)
     
-      //       Day3
+      //       Day5
       $('aside figure:nth-child(5) h2').text(weather.forecast[4].day);
       $('aside figure:nth-child(5) img').attr('src', weather.forecast[4].image);
       $('aside figure:nth-child(5) figcaption').text(weather.forecast[4].text);
       $('aside figure:nth-child(5) .high').text(weather.forecast[4].high)
     
-      //       Day3
+      //       Day6
       $('aside figure:nth-child(6) h2').text(weather.forecast[5].day);
       $('aside figure:nth-child(6) img').attr('src', weather.forecast[5].image);
       $('aside figure:nth-child(6) figcaption').text(weather.forecast[5].text);
       $('aside figure:nth-child(6) .high').text(weather.forecast[5].high)
     
-      //       Day3
+      //       Day7
       $('aside figure:nth-child(7) h2').text(weather.forecast[6].day);
       $('aside figure:nth-child(7) img').attr('src', weather.forecast[6].image);
       $('aside figure:nth-child(7) figcaption').text(weather.forecast[6].text);
